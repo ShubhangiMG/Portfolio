@@ -1,40 +1,125 @@
 import React from "react";
+import pic from "../pic.png";
+import Particles from "react-tsparticles";
+import AOS from 'aos';
+
 export default function About() {
+  
+    // const particlesInit = (main) => {
+    //     console.log(main);
+    
+    //     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    //   };
+    
+    //   const particlesLoaded = (container) => {
+    //     console.log(container);
+    //   };
+      AOS.init({
+        // initialise with other settings
+        duration : 2000
+      });
     return (
-        <section id="about">
-          <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                Hi, I'm Reed.
-                <br className="hidden lg:inline-block" />I love to build amazing
-                apps.
-              </h1>
-              <p className="mb-8 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                Laborum, voluptas natus?
-              </p>
-              <div className="flex justify-center">
-                <a
-                  href="#contact"
-                  className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                  Work With Me
-                </a>
-                <a
-                  href="#projects"
-                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                  See My Past Work
-                </a>
-              </div>
+        <section className="aboutsec container">
+            {/* <Particles style={{zIndex:"auto"}}
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        
+        fpsLimit: 50,
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            bubble: {
+              distance: 4000,
+              duration: 2,
+              opacity: 0.8,
+              size: 700,
+            },
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 100,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: "#7a7d81",
+          },
+          links: {
+            color: "#fff",
+            distance: 120,
+            enable: true,
+            opacity: 0.3,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outMode: "bounce",
+            random: false,
+            speed: 2,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 600,
+            },
+            value: 50,
+          },
+          opacity: {
+
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            random: true,
+            value: 8,
+          },
+        },
+        detectRetina: true,
+      }} 
+    />*/}
+   
+
+            <div className="row g-5 introsec">
+            <div className="col-md-7 d-sm-flex col-12 order-2 order-md-1">
+            <div className="introdiv text-md-end text-center" data-aos="fade-left"  data-aos-duration="5000">
+               <h1>Shubhangi Garg</h1>
+               <p>A web designer and a developer</p>
+            {/* <h2 style={{zIndex:"auto"}}>Bachelor of Technology (2018-2022)<br/>
+Electronics and Communication Engineering<br/>
+Indian Institute of Information Technology, Kota (MNIT Jaipur)</h2>
+<p style={{zIndex:"auto"}}>A self-motivated undergraduate with ability to adapt state-of-art technologies. According to the requirements of the workflow, implemented diverse technical projects in the course. Shows utmost commitment to the task entrusted to her and puts absolute efforts into getting things done</p> */}
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img
-                className="object-cover object-center rounded"
-                alt="hero"
-                src="./coding.svg"
-              />
             </div>
-          </div>
+            <div className="col-md-5 col-12 order-1 order-md-2">
+            <div className="picdiv right">
+                <div className="circle">
+                    <img src={pic} data-aos="zoom-out" alt="picture" className="pic d-block"/>
+                </div>
+            </div>
+            </div>
+            </div>
         </section>
       );
 }
