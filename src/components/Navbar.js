@@ -12,16 +12,16 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="#">About me</a>
+          <a className="nav-link active" aria-current="page" href="#about">About me</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
+          <a className="nav-link" href="#projects">Projects</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Volunteering</a>
+          <a className="nav-link" href="#volunteer">Volunteering</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contact</a>
+          <a className="nav-link" href="#contactnav">Contact</a>
         </li>
       </ul>
     </div>

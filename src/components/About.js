@@ -101,11 +101,12 @@ export default function About() {
     />*/}
    
 
-            <div className="row g-5 introsec">
+            <div className="row g-5 introsec" id="about">
             <div className="col-md-7 d-sm-flex col-12 order-2 order-md-1">
             <div className="introdiv text-md-end text-center" data-aos="fade-left"  data-aos-duration="5000">
+              
                <h1>Shubhangi Garg</h1>
-               <p>A web designer and a developer</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius</p>
             {/* <h2 style={{zIndex:"auto"}}>Bachelor of Technology (2018-2022)<br/>
 Electronics and Communication Engineering<br/>
 Indian Institute of Information Technology, Kota (MNIT Jaipur)</h2>
