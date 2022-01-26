@@ -4,7 +4,7 @@ export const projects = [
       subtitle: "MERN Stack",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/dataset-cover.jpg",
+      image: "../portfolio/images/dataset-cover.jpg",
       link: "https://reactbootcamp.com",
       skills:["React", "JS", "VScode"],
     },
@@ -22,7 +22,7 @@ export const projects = [
       subtitle: "React and Firebase",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/dataset-cover.jpg",
+      image: "../portfolio/images/dataset-cover.jpg",
       link: "https://jsbootcamp.com",
       skills:["React", "JS", "VScode"],
     },
@@ -31,7 +31,7 @@ export const projects = [
       subtitle: "React Hooks",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/dataset-cover.jpg",
+      image: "../portfolio/images/dataset-cover.jpg",
       link: "https://pythonbootcamp.com",
       skills:["React", "JS", "VScode"],
     },
