@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
+
 import React from "react";
 import logoimg from "../ShuGARG-removebg-preview.png"
 export default function Navbar() {

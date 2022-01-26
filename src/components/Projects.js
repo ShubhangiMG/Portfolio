@@ -8,16 +8,7 @@ import { projects } from "./data";
 import IconGithub from "./icons/github";
 import ExtIcon from "./icons/external";
 export default function Projects() {
-  
-// const styleview=styled.view`
-// .projects-list:nth-of-type(2) .proj-img{
-//   grid-column: 1 / 8;
-// }
-// .projects-list:nth-of-type(2) .project-content{
-//   grid-column: 7 / -1;
-//     text-align: right;
-// }
-// `
+
 
   return (
 

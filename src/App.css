@@ -460,6 +460,10 @@ outline-offset: 10px;
   padding: 1.6rem;
   box-shadow: 0 65px 51px -47px #000;
 }
+.contactNavdiv:hover{
+  transform: scale(1.03);
+  cursor: grab;
+}
 .CTAbox div{
   margin: auto;
   padding: 5px;
