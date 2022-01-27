@@ -35,7 +35,7 @@ nav a.nav-link{
     border-top: 0.190rem solid #23295a;
   }
   .introsec{
-    background-color: black !important;
+    background-color: #fff !important;
     min-height: 89vh;
   }
   .introsec .col-md-5{
@@ -50,31 +50,28 @@ nav a.nav-link{
   }
   .introdiv{
 
-    color:#fff;
+    color:#212529;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .introdiv h1{
     font-size: 2.4rem !important;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-style: italic;
+    font-weight: 700;
   }
   .introdiv h2{
     font-size: 1rem;
   }
   .introdiv p{
     padding-top: 1.5rem;
-    color: #c3bcc7;
   }
   .picdiv{
-    margin-top: 4rem;
+    margin-top: 4rem;border-radius: 18px;
   }
   .pic{
     border-radius: 100%;
     width: 70%;
-    outline: 10px solid #ffce6d;
+    outline: 10px solid #ffbf41;
 outline-offset: 10px;
   }
   .circle{
@@ -192,9 +189,7 @@ outline-offset: 10px;
 }
 #projects>h1{
   
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-style: italic;
+  font-weight: 700;
   padding-bottom:3rem !important;
 }
 .projects-list{
@@ -322,13 +317,12 @@ outline-offset: 10px;
   min-height: 100vh;
   text-align: center;    
   padding-bottom: 8rem;
+  border-radius: 18px;
 }
 .vol_div h1{
   padding-top: 5rem;
   padding-bottom: 1rem;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-style: italic;
 }
 .vol_div h6{
   padding-bottom: 5rem;
@@ -341,7 +335,7 @@ outline-offset: 10px;
 .volrow .col-lg-3 {
   display: block;
   float: left;
-  height: 20.3rem;
+  height: 19.3rem;
   clear: none;
   position: relative;
   text-align: center;
@@ -367,15 +361,15 @@ outline-offset: 10px;
   width: 100%;
 }
 .volrow .vol_image{
-  width: 80%;
-    height: 80%;
+  width: 60%;
+    height: 76%;
     background-color: #fff;
     border-radius: 50%;
     display: block;
     margin: 0.5rem auto;
     box-shadow: 0 15px 40px 1px rgb(0 0 0 / 15%);
     background-position: center;
-    background-size: 10rem 9rem;
+    background-size: 8rem 6rem;
     background-repeat: no-repeat;
 }
 .title-area{
@@ -434,23 +428,24 @@ outline-offset: 10px;
 .title-label{
   position: relative;
     font-size: .625rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .contactNavdiv{
-  background-color:#ffce6d;
+  background-color:#ffc450;
   margin:auto;
   margin-top:-3rem;
   z-index: 10;
   width: 70%;
   border-radius: 12px;
   text-align: center;
-  color: #03012C;
+  color: #212529;
 }
 .CTAbox{
   display: flex;
@@ -470,10 +465,7 @@ outline-offset: 10px;
 }
 .CTAbox div h1{
   font-size: 1.8rem;
-  font-family: 'Montserrat', sans-serif;
-  
   font-weight: 900;
-  font-style: italic;
 }
 
 .CTAbox div p{
@@ -481,7 +473,7 @@ outline-offset: 10px;
   font-weight: 500;
 }
 .CTAbox button{
-  background-color: #ffce6d;
+  background-color: #ffc450;
   border-radius: 2rem;
   border:3px solid #03012C;
   padding:8px 20px;
@@ -513,7 +505,7 @@ outline-offset: 10px;
 @media only screen and (min-width:768px){
   
   .number-area{
-    top: 90%;
+    top: 76%;
  }
  .leftSocial{
   display: block;
@@ -523,7 +515,7 @@ outline-offset: 10px;
    display: block;
  }
  .title-area{
-    top: 84%;
+    top: 70%;
 }
 .picdiv{
   margin-top: 0;
@@ -577,4 +569,13 @@ outline-offset: 10px;
 #footer .socialList{
   display: none;
 }
+
+}
+
+@media only screen and (min-width:992px){
+
+  .volrow .vol_image{
+    width: 60%;
+    height: 60%;
+  }
 }
