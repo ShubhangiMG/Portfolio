@@ -15,12 +15,18 @@ a{
 .logo{
   width: 15rem;
 }
+.colorChange{
+  height: 4rem !important;
+}
 nav a.nav-link{
   font-weight: 600;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 .navbar{
+  position: fixed !important;
+  width: 100% !important;
+  height:7rem;
   background-color:#ffce6d !important ;
 }
 .navbar-nav >li >a{
@@ -34,9 +40,13 @@ nav a.nav-link{
   .navbar-nav > li > a.active, .navbar-nav > li > a:hover, .navbar-nav > li > a.active:focus{
     border-top: 0.190rem solid #23295a;
   }
+  .aboutsec{
+    
+    padding-top:5rem;
+  }
   .introsec{
     background-color: #fff !important;
-    min-height: 89vh;
+    min-height: 95vh;
   }
   .introsec .col-md-5{
     justify-content: flex-start;
