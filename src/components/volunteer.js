@@ -5,7 +5,7 @@ import miracle from "../images/miracle.png"
 import paath from "../images/paathshala-trust-logo.png"
 export default function Volunteer() {
   return(
-    <div className="vol_div justify-content-center container" id="volunteer">
+    <section className="vol_div justify-content-center container" id="volunteer">
             <h1>Volunteering activities</h1>
             <h6>Giving back to the people. Not a favour but a responsibility.</h6>
             <div className="row gx-0 container justify-content-center volrow">
@@ -15,6 +15,6 @@ export default function Volunteer() {
                 <div className="col-6 col-lg-3"><div class="experiment-number-mask"><span>04</span></div><div className="circlediv"><div class="vol_image" style={{backgroundImage:`url(${paath})`}}></div></div><div class="title-area"><div class="title-label">Organisation</div><div class="title">Paathshala</div></div><div class="number-area">&nbsp;</div></div>
 
             </div>
-    </div>
+    </section>
   );
 }

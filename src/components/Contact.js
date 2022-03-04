@@ -1,6 +1,46 @@
-// import React from "react";
-
-// export default function Contact() {
+ import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+ import Footer from "./footer";
+export default function Contact() {
+    // const form = useRef();
+    function sendEmail(e){
+        e.preventDefault();
+        emailjs.sendForm('service_nhq47a5', 'template_5qcjfmj', e.target, 'x8zbjNPhsGy8iNFhR')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+    }
+return(
+    <div className="contactform">
+        <img width="210px" src="https://cdn4.vectorstock.com/i/1000x1000/66/13/woman-in-a-yellow-sweater-is-smiling-and-waving-vector-22826613.jpg"/>
+        <form name="contact form" method="post" data-netlify="true" onSubmit={sendEmail}>
+            <input type="hidden" name="form-name" value="contact form"/>
+            <div>
+                <label><br/>
+                    <input type="text" name="first-name" placeholder="Name"/>
+                </label>
+            </div>
+            <div>
+                <label htmlFor="email"></label><br/>
+                    <input type="email" id="email" name="email" placeholder="Email"/>
+            </div>
+            <div>
+                <label><br/>
+                        <textarea name="message" cols="50" rows="5" placeholder="Message"></textarea>
+                </label>
+            </div>
+            <div>
+                <input type="submit" className="buttonclass" value="Send Away!"></input>
+            </div>
+        {/* <button type="button">Send Away!</button> */}
+        </form>
+    <Footer/>
+    </div>
+);
+}
 //     const [name, setName] = React.useState("");
 //   const [email, setEmail] = React.useState("");
 //   const [message, setMessage] = React.useState("");

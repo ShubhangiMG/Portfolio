@@ -22,6 +22,7 @@ export default function Projects() {
           title={data.title}
           description={data.description}
           link={data.link}
+          link2={data.link2}
           image={data.image}
           skills={data.skills}
         />
@@ -32,7 +33,7 @@ export default function Projects() {
 }
 
 
-const Project=({title,description,link,image,skills})=>{
+const Project=({title,description,link,link2,image,skills})=>{
   return(
         <li className="projects-list">
           <div class="project-content">
@@ -49,8 +50,9 @@ const Project=({title,description,link,image,skills})=>{
                   ))}
                 </ul>
                 <div className="proj-links">
-                  <a href="#{link}"><IconGithub/></a>
-                  <a href="#"><ExtIcon/></a>
+                {/* className={{link}==""?'disabledlink':'enabled'} */}
+                  <a href={link} target="_blank" ><IconGithub/></a>
+                  <a href={link2} target="_blank"><ExtIcon/></a>
                 </div>
               </div>
           </div>

@@ -16,7 +16,13 @@ a{
   width: 15rem;
 }
 .colorChange{
-  height: 4rem !important;
+  height: 6rem !important;
+}
+.colorChange .logo{
+  width: 10rem;
+}
+.highlightclass{
+  border-top: 0.190rem solid #23295a;
 }
 nav a.nav-link{
   font-weight: 600;
@@ -37,12 +43,20 @@ nav a.nav-link{
   display: flex;
   justify-content: flex-end;
   }
-  .navbar-nav > li > a.active, .navbar-nav > li > a:hover, .navbar-nav > li > a.active:focus{
+  .navbar-nav > li > a:active, .navbar-nav > li > a:hover, .navbar-nav > li > a:active:focus, .navbar-nav > li > a:visited{
     border-top: 0.190rem solid #23295a;
   }
+  .coloredspan{
+    color:#4D4DFF;
+    font-weight: 600;
+  }
+  .coloredspan2{
+    color:rgb(177 84 135);
+  }
+
   .aboutsec{
     
-    padding-top:5rem;
+    padding-top:5rem; 
   }
   .introsec{
     background-color: #fff !important;
@@ -88,6 +102,7 @@ outline-offset: 10px;
     display: flex;
     align-items: center;
     height: 100%;
+    justify-content: space-evenly;
   }
 
   .aboutImg{
@@ -197,6 +212,9 @@ outline-offset: 10px;
 #projects{
   background-color: #03012C;
 }
+/* .disabledlink{
+  color:#000;
+} */
 #projects>h1{
   
   font-weight: 700;
@@ -509,6 +527,7 @@ outline-offset: 10px;
     text-align: center;
     margin-top: 4rem;
     color:#fff;
+    background-color: #03012c;
   }
   #footer .socialList{
     display: flex;
@@ -516,8 +535,37 @@ outline-offset: 10px;
   #footer .socialList::after{
     content: none !important;
   }
+  .contactform{
+    margin-top: 12rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  .contactform img{
+    border-radius: 50%;
+    border:6px solid #03012c;
+    margin-top: -165px;
+    margin-bottom: 0.5rem;
+  }
+  .contactform .footer{
+    margin-top: 0.4rem;
+    padding-top: 1rem;
+  }
+  .contactform .buttonclass{
+    margin: 10px;
+    background-color: #ffce6d;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 5px;
+  }
+  .buttonclass:hover{
+    transform: scale(1.1);
+    background-color: #ffb92c;
+    font-weight: 600;
+  }
 @media only screen and (min-width:768px){
-  
+  .colorChange{
+    height: 4rem !important;
+  }
   .number-area{
     top: 76%;
  }

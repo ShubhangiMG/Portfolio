@@ -106,7 +106,7 @@ export default function About() {
             <div className="introdiv text-md-end text-center" data-aos="fade-left"  data-aos-duration="5000">
               
                <h1>Shubhangi Garg</h1>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius</p>
+               <p className="aboutpara">A final year undergraduate pursuing BTech in Electronics and Communication. My current skillset lies around <span className="coloredspan">HTML</span>, <span className="coloredspan">CSS</span>, <span className="coloredspan">JS</span>, <span className="coloredspan">React</span>. Other than that, I've also worked with <span className="coloredspan"> Deep learning</span> and <span className="coloredspan">Java</span> and I strive to become master at web development.</p>
             {/* <h2 style={{zIndex:"auto"}}>Bachelor of Technology (2018-2022)<br/>
 Electronics and Communication Engineering<br/>
 Indian Institute of Information Technology, Kota (MNIT Jaipur)</h2>
