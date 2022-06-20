@@ -68,3 +68,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+-add more space bet. projects
+-link proj disp images to link proj
+-menu bar for responsive one: bg color, close after click,
+-adjust volunteer sec:
+.volrow .col-lg-3 {
+    display: block;
+    float: left;
+    height: 15rem;
+    clear: none;
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+    
+.circlediv {
+    display: block;
+    position: relative;
+    z-index: 10;
+    height: 68%;
+    width: 100%;
+}
+
+
+.title-area {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    text-align: left;
+    z-index: 10;
+}
+
+.number-area {
+    position: absolute;
+    top: 77%;
+    right: 10%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    z-index: 10;
+}
